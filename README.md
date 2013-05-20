@@ -100,12 +100,32 @@ alert(myCalculatorObj.Super["Calculator"].someValue);//displays "SuperValue"
 
 ```
 
-Package
+Package(WIP)
 =======
 
-I) Creating Javascript Classes.
+Could be added at multiple places in a file.
+`Package("com.example.testFolder");`
+
+Include
 =======
 
+As of right now `*` is not supported while including js files.
+
+`Include("com.example.testFolder.className1");`
+
+* Usefull for conditionally loading js files.
+
+```js
+if(someConditionIsTrue)
+{
+        Include("com.example.testFolder.className1");
+}
+else
+{
+        Include("com.example.testFolder.className2");
+}
+
+```
 
 
 Things that are not recommended.
